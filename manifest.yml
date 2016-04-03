@@ -1,0 +1,8 @@
+---
+applications:
+- name: pydata_cf_test 
+  memory: 512MB
+  disk_quota: 2GB
+  random-route: true
+  command: python app.py
+  buildpack: https://github.com/ihuston/python-conda-buildpack.git
