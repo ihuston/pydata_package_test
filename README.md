@@ -20,6 +20,9 @@ By default this app uses the [Python Conda Buildpack](https://github.com/ihuston
 and installs packages using `conda`.
 To change this, edit the `manifest.yml` file.
 
+Be careful to allocate enough memory to the app to allow the tests to run.
+8GB seems to be needed for some of the more intensive scikit-learn & pandas tests.
+
 ## Successful Package Installation
 If you have successfully installed the packages the versions will be printed
 

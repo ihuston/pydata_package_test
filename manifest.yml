@@ -1,7 +1,7 @@
 ---
 applications:
 - name: pydata_cf_test 
-  memory: 512MB
+  memory: 8GB
   disk_quota: 2GB
   random-route: true
   command: python app.py
