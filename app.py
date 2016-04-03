@@ -24,7 +24,7 @@ def in_module_tests(module_name):
     try:
         module = modules[module_name]
         if module_name == 'sklearn':
-            result = pytest.main('--pyargs sklearn')
+            result = pytest.main('--pyargs sklearn.tests')
             result_string = "sklearn: passed" if result == 0 else "sklearn: failed"
         else:
             result = module.test()
